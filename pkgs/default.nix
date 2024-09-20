@@ -113,6 +113,8 @@
 
       wine-ge = wineBuilder "wine-ge" "full" {};
 
+      wine-ge-jpf91 = wineBuilder "wine-ge-jpf91" "full" {};
+
       wine-osu = wineBuilder "wine-osu" "base" {};
 
       wine-tkg = wineBuilder "wine-tkg" "full" {};

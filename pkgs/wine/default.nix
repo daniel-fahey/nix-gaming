@@ -54,6 +54,17 @@ in {
       meta = old.meta // {passthru.updateScript = ./update-wine-ge.sh;};
     });
 
+  wine-ge-jpf91 =
+    (callPackage "${nixpkgs-wine}/pkgs/applications/emulators/wine/base.nix" (defaults
+      // {
+        pname = pnameGen "wine-ge-jpf91";
+        version = pins.proton-wine-jpf91.branch;
+        src = pins.proton-wine-jpf91;
+      }))
+    .overrideAttrs (old: {
+      meta = old.meta // {passthru.updateScript = ./update-wine-ge.sh;};
+    });
+
   wine-tkg = callPackage "${nixpkgs-wine}/pkgs/applications/emulators/wine/base.nix" (lib.recursiveUpdate defaults
     rec {
       pname = pnameGen "wine-tkg";
