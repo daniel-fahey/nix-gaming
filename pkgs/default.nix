@@ -116,6 +116,8 @@
 
       wine-ge = wineBuilder "wine-ge" "full" {};
 
+      wine-ge-rekordbox = wineBuilder "wine-ge-rekordbox" "full" {};
+
       wine-osu = wineBuilder "wine-osu" "base" {};
 
       wine-tkg = wineBuilder "wine-tkg" "full" {};

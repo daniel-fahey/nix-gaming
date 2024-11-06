@@ -117,6 +117,18 @@
       "url": "https://github.com/GloriousEggroll/proton-wine/archive/39021e609a24b6aeffdf9c4695a286d71e7dffbc.tar.gz",
       "hash": "000d5kba7vs5nc1sc3946jkpqmch4w09qz74i5zgc7nh7znck6f8"
     },
+    "proton-wine-rekordbox": {
+      "type": "Git",
+      "repository": {
+        "type": "GitHub",
+        "owner": "jpf91",
+        "repo": "proton-wine"
+      },
+      "branch": "Proton8-26",
+      "revision": "2fa748b67ef8e8e40d1c74993fe2b5aa88b40b5d",
+      "url": "https://github.com/jpf91/proton-wine/archive/refs/tags/rekordbox_1.tar.gz",
+      "hash": "1imvdz5hcdx98dya20zdi1jbl7ianq43qlx1wjcxcvbl0l3cs3ip"
+    },
     "vkd3d-proton": {
       "type": "GitRelease",
       "repository": {

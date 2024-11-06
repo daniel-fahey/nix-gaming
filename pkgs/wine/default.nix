@@ -54,6 +54,17 @@ in {
       meta = old.meta // {passthru.updateScript = ./update-wine-ge.sh;};
     });
 
+  wine-ge-rekordbox =
+    (callPackage "${nixpkgs-wine}/pkgs/applications/emulators/wine/base.nix" (defaults
+      // {
+        pname = pnameGen "wine-ge-rekordbox";
+        version = pins.proton-wine-rekordbox.branch;
+        src = pins.proton-wine-rekordbox;
+      }))
+    .overrideAttrs (old: {
+      meta = old.meta // {passthru.updateScript = ./update-wine-ge.sh;};
+    });
+
   wine-tkg = callPackage "${nixpkgs-wine}/pkgs/applications/emulators/wine/base.nix" (lib.recursiveUpdate defaults
     rec {
       pname = pnameGen "wine-tkg";

@@ -11,3 +11,6 @@ The patches can be found
 It consists of a wine tree generated with
 [the tkg patches](https://github.com/Frogging-Family/wine-tkg-git).
 
+* `wine-ge-rekordbox` is `wine-ge` built with patches fixing https://bugs.winehq.org/show_bug.cgi?id=56735
+to enable USB export in rekordbox by @jpf91. The release can be found
+[here](https://github.com/jpf91/proton-wine/releases/tag/rekordbox_1)
